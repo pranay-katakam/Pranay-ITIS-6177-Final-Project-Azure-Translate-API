@@ -11,7 +11,7 @@ const router = express.Router();
  */
 
 /**
- * POST /translate
+ * POST /
  * @tags Translate
  * @summary Translates texts.
  * @param {TranslateSchema} request.body.required - Translation JSON Object - application/json
@@ -20,7 +20,7 @@ const router = express.Router();
 router.post('/', controller.translate);
 
 /**
- * GET /translate/languages
+ * GET /languages
  * @tags Translate
  * @summary Returns all available languages that can be translated to/from.
  * @return 200 - success response - application/json
